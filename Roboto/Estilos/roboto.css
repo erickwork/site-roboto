@@ -1,0 +1,163 @@
+.avaliacoes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.competicao{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+.montagem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0 0 0;
+    padding: 0;
+    height: 10px;
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+video{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.robocup{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pecas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    animation: animafaixa 20s linear infinite;
+}
+
+.duvidas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:50px;
+}
+
+#accordionFlushExample{
+    width: 80%;
+}
+
+.slides img {
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;
+    transition: opacity 1s ease-in-out; /* Adicionando transição de opacidade */
+}
+
+.slides img:first-child {
+    opacity: 1; /* Mantém a primeira imagem visível */
+}
+
+.slides img:last-child {
+    position: relative;
+    right: -100%; /* Posiciona a última imagem à esquerda da primeira */
+}
+
+@keyframes animafaixa {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+  .competicao img{
+    height: auto;
+    width: 20%;
+    object-fit: scale-down;
+  }
+
+  .texto-principal{
+    display: flex;
+    justify-content: center;
+    padding:40px;
+}
+
+.textos{
+    font-family: tropic-fantasy;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.roborosa{
+    display: flex;
+    justify-content: center;
+}
+
+#testee{
+    width: 100%;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+}
+
+#testee img{
+    height: 350px;
+    width: 350px;
+}
+
+.col{
+    width: 300px !important;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.col h1{
+    width: 100px;
+}
+
+.coluna{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.coluna p{
+    color: black;
+
+}
+  
+  

@@ -1,0 +1,295 @@
+@font-face {
+    font-family: bagerich;
+    src: url(/fontes/audience.otf);
+}
+@font-face {
+    font-family: tropic-fantasy;
+    src: url(/fontes/tropic-fantasy.otf);
+}
+
+:root{
+    --rosa: #dd9dd8;
+}
+
+header{
+    z-index: 999999 !important;
+  }
+
+li{
+    z-index: 999999 !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/imagens/textura.png");
+    background-size: auto;
+    overflow-x: hidden;
+}
+
+
+/* MENU DE NAVEGAÇÃO */
+
+#btn-login{
+    background-color: var(--rosa) !important;
+    border-color: #d159e9 !important;
+}
+
+#btn-sign{
+    border-color: #d159e9 !important;
+    color: black;
+}
+
+#tec {
+    position: relative;
+}
+
+#tec::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Modificado para 100% para cobrir todo o elemento pai */
+    height: 45%;
+    background-color: var(--rosa);
+    z-index: -1; /* Define um valor menor de z-index para o pseudo-elemento */
+    animation: reveal 2s forwards;
+}
+
+@keyframes reveal {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+#tec-content {
+    position: relative; /* Garante que o z-index seja aplicado */
+    z-index: 1; /* Define um valor maior de z-index para o conteúdo */
+}
+
+
+#btn-sign:hover{
+    background-color: var(--rosa) !important;
+}
+
+
+#home{
+    color: var(--rosa) !important;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.nav-link:hover{
+    color: #f700e2 !important;
+}
+
+header{
+    padding: 60px 60px 0 60px !important;
+    background-color: white !important;
+    margin: 0px !important;
+    /* height: 70px; */
+}
+
+header h1{
+    color: black
+}
+
+
+/* FIM DO MENU DE NAVEGAÇÃO */
+
+
+
+
+/* .teste{
+    height: 500px;
+    background-color: gray;
+} */
+
+
+
+/* FRASES */
+#titulo-empresa{
+    display: flex;
+    justify-content: center;
+}
+
+#titulo-empresa h2{
+    color: black;
+    font-size: 2.2em;
+    font-family: bagerich;
+}
+
+.frase{
+    display: flex;
+    justify-content: center;
+}
+
+
+.frase p{
+    color: black;
+}
+
+.empresa{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.empres-frase{
+    padding: 2%;
+    color: black;
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .empres-frase{
+        font-size: 28px;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    /* Estilos para telas maiores (por exemplo, tablets e desktops) */
+    #titulo-empresa h2 {
+        font-size: 1.8em; /* Tamanho da fonte */
+    }
+
+    .empres-frase{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .empres-frase{
+        font-size: 23px;
+    }
+    
+}
+
+@media screen and (max-width: 580px) {
+    .empres-frase{
+        font-size: 20px;
+    }
+
+    .corttex{
+        color: black;
+    }
+    
+}
+
+/* FIM FRASES */
+
+
+/* Faixas */
+
+.text-wrapper {
+    display: flex;
+    padding-top: 8px;
+    
+    }
+    
+    #text-wrapper1{
+        background: white;
+        transform: rotate(-2deg);
+        z-index: 1;  
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    #text-wrapper2{
+        background: black;
+        transform: rotate(2deg);
+        z-index: 2;
+        
+    }
+    .text-wrapper h1{
+        white-space: nowrap;
+        font-family:tropic-fantasy;
+        font-size: 72px;
+        padding: 0;
+        margin: 20px;
+        transform: scalex(10);
+        display: inline;
+    
+    }
+    #text-wrapper1 h1{
+        color: black;
+        animation: animafaixa 25s linear infinite;
+    }
+    #text-wrapper2 h1{
+        color: white;
+        animation: animafaixa 25s linear infinite reverse;
+    }
+    
+    @keyframes animafaixa{
+        0% {
+            transform: translateX(0%);
+        } 100% {
+            transform: translate(-100%);
+        }
+    }
+
+    .dois{
+        display: flex;
+        justify-content: center;
+        margin: -25px 0 0 0;
+        padding: 0;
+        height: 88vh;
+        box-sizing: border-box;
+        background-color: white;
+        cursor: none;
+    }
+    body{
+        overflow: hideen;
+    }
+    .efeito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .corttex {
+        font-family: bagerich;
+        z-index: 2;
+        padding: 50% 0 0 0 !important;
+        margin: 0 !important;
+        font-family: bagerich;
+        font-size: 80px;
+        font-weight:300;
+        color: white;
+        mix-blend-mode: difference;
+        height: 500px;
+    }
+    .dois:hover .cursor{
+        z-index: 0;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 250px;
+        height: 250px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        height: 500px;
+        transform: translate(-50%,-50%);
+        /* mix-blend-mode: difference; */
+        animation: cursor_animation 3s linear infinite;
+    }
+    
+    @keyframes cursor_animation{
+        0% {
+            width: 300px;
+            height: 300px;
+        }
+        50%{
+            width: 80px;
+            height: 80px;
+        }
+        100% {
+            width: 300px;
+            height: 300px;
+        }
+    }

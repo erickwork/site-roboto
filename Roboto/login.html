@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <title>Ludiflex | Login & Registration</title>
+    <!-- <script src="/Scripts/login.js"></script> -->
+</head>
+<body>
+
+ <div class="wrapper">
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Não possui conta? <a href="/cadastrar.html">Cadastre-se</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="emails" placeholder="Usuario ou email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="senhas" class="input-field" placeholder="Senha">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" id="entrar" value="Logar" onclick="logar()">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check">Lembrar</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Esqueceu a senha?</a></label>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>   
+
+
+
+<script src="/Scripts/cadastro.js"></script>
+<script src="/Scripts/login.js"></script>
+
+</body>
+</html>

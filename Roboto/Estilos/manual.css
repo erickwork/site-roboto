@@ -1,0 +1,28 @@
+/* body {
+    font: 400 1em/1.5 "Neuton";
+    background: #090d00;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    margin: 0;
+  } */
+
+  :root{
+    --rosa: #dd9dd8;
+}
+
+
+.manuais{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none;
+  color: var(--rosa);
+}
+
+#documento-container{
+  height: 1000px;
+}

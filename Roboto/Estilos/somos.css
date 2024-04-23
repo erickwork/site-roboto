@@ -1,0 +1,170 @@
+:root{
+  --rosa: #dd9dd8;
+}
+
+
+@font-face {
+    font-family: bagerich;
+    src: url('/fontes/bagerichdemo.otf');
+}
+
+@font-face {
+    font-family: audience;
+    src: url('/fontes/audience.otf');
+    src: url('/fontes/Audience.ttf');
+
+}
+
+@font-face {
+    font-family: tropic-fantasy;
+    src: url('/fontes/tropic-fantasy.otf')
+}
+
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para a barra de menu */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    mix-blend-mode: difference;
+  }
+  
+  /* Estilo para o conteúdo */
+  .content {
+    padding-top: 50px; /* Ajuste o valor conforme a altura da barra de menu */
+  }
+
+ /* tr td {
+    color: white;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+  .tr1 {
+    background-color: white;
+  }
+  .tr2 {
+    background-color: black;
+  }
+  .tr3 {
+    background-color: red;
+  }
+  .tr4 {
+    background-color: blue;
+  }*/
+
+.animated-underline {
+    position: relative;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajuste a posição do sublinhado conforme necessário */
+    width: 100%;
+    height: 2px; /* Altura do sublinhado */
+    background-color: #007bff; /* Cor do sublinhado */
+    visibility: hidden;
+    transform: scaleX(0); /* Inicialmente, o sublinhado tem largura zero */
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.animated-underline:hover::after {
+    visibility: visible;
+    transform: scaleX(1); /* Aumenta a largura do sublinhado no hover */
+}
+
+
+.div{
+  display: flex;
+  justify-content: center;
+}
+
+.equipe{
+  display: flex;
+  justify-content: space-around;
+}
+
+p{
+    font-family: tropic-fantasy;
+}
+
+#descricao {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 35px;
+    display: inline-block;
+    vertical-align: top; /* Alinha os elementos ao topo para garantir que fiquem alinhados corretamente */
+}
+
+.Words-line{
+    list-style-type: none;
+    font-size: 80px;
+    
+}
+.Words-line{
+    font-family: bagerich;
+    
+}
+#notas{
+    margin-top: -110px;
+}
+
+#grupo img{
+border-radius:10px ;
+}
+
+.txt{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    background-image: url("/imagens/paper2.png");
+    background-size: cover;
+}
+
+.Words-line p:hover{
+  color: var(--rosa);
+}
+
+
+#borda{
+  border-top: 1px solid var(--rosa);
+}
+
+#lista{
+  margin-top: 50px;
+  border-top: 1px solid var(--rosa);
+}
+
+#lista span{
+  color: var(--rosa);
+}
